@@ -86,6 +86,7 @@ header {
 .header-class {
   transition: 0.1s ease-in-out;
   background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.236);
 }
 
 .modes {
