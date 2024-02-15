@@ -3,9 +3,9 @@ import { useState } from "react";
 /* eslint-disable react/prop-types */
 export default function Header(props) {
   const [adviceData, setAdviceData] = useState(
-    "Here you will get your daily advice"
+    "It's easy to sit up and take notice, what's difficult is getting up and taking action."
   );
-  const [adviceId, setAdviceId] = useState("");
+  const [adviceId, setAdviceId] = useState("117");
 
   function handleChangeButton() {
     fetch("https://api.adviceslip.com/advice")

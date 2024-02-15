@@ -10,34 +10,39 @@ body {
 
 header {
   position: relative;
-  width: 377px;
-  height: 233px;
+  width: 477px;
+  height: 300px;
   background-color: #313a49;
   border-radius: 10px;
   padding: 2em;
+  text-align: center;
 }
 
 .header-title {
   text-align: center;
-  margin: 0;
   padding: 1em 3em 1em 3em;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.8em;
   color: #54fda8;
+  margin-bottom: 0.7em;
 }
 
 .advice-text {
-  font-size: 1.3em;
+  font-size: 1.56em;
   text-align: center;
   color: white;
-  margin-top: 0;
   letter-spacing: 2px;
+  margin-bottom: 2em;
 }
 
 .pattern-divider {
-  width: inherit;
   margin-top: 1em;
+  width: 100%;
+  max-width: 400px; /* Adjust as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .dice {
@@ -46,8 +51,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: -40px;
-  left: 43%;
+  bottom: -35px;
+  left: 44.2%;
   background-color: #54fda8;
   border: none;
   padding: 1.5em;
@@ -61,7 +66,35 @@ header {
 }
 
 .dice:active {
+  background-color: #54fda8;
   padding: 1em;
   box-shadow: 0px 0px 15px #fd8154;
-  left: 44.3%;
+  left: 45.4%;
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    width: 280px;
+    height: 260px;
+  }
+
+  .header-title {
+    font-size: 20px;
+  }
+
+  .advice-text {
+    font-size: 16px;
+  }
+
+  .pattern-divider {
+    max-width: 300px;
+  }
+
+  .dice {
+    left: 40.8%;
+  }
+
+  .dice:active {
+    left: 42.7%;
+  }
 }
