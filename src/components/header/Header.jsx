@@ -21,7 +21,7 @@ export default function Header(props) {
       <p className="header-title">
         Advice # <span id="advice-id">{adviceId}</span>
       </p>
-      <p className="advice-text">{adviceData}</p>
+      <p className="advice-text">&quot;{adviceData}&quot;</p>
       <img
         className="pattern-divider"
         src={props.pattern}

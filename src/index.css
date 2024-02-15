@@ -20,7 +20,7 @@ header {
 .header-title {
   text-align: center;
   margin: 0;
-  padding: 3em 3em 1em 3em;
+  padding: 1em 3em 1em 3em;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.8em;
@@ -28,8 +28,11 @@ header {
 }
 
 .advice-text {
+  font-size: 1.3em;
   text-align: center;
   color: white;
+  margin-top: 0;
+  letter-spacing: 2px;
 }
 
 .pattern-divider {
@@ -43,16 +46,22 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: -20px;
-  left: 44.3%;
+  bottom: -40px;
+  left: 43%;
   background-color: #54fda8;
   border: none;
-  padding: 1em;
+  padding: 1.5em;
   border-radius: 50%;
   transition: 0.1s ease-in-out;
 }
 
 .dice:hover {
   background-color: #fd8154;
+  transform: rotate(25deg);
+}
+
+.dice:active {
+  padding: 1em;
   box-shadow: 0px 0px 15px #fd8154;
+  left: 44.3%;
 }
