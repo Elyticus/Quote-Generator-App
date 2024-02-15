@@ -63,12 +63,12 @@ header {
   border: none;
   padding: 1.5em;
   border-radius: 50%;
-  transition: 0.1s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .dice:hover {
   background-color: #fd8154;
-  transform: rotate(25deg);
+  transform: rotate(180deg);
 }
 
 .dice:active {

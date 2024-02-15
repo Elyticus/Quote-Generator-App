@@ -6,19 +6,6 @@ export default function Header(props) {
     "It's easy to sit up and take notice, what's difficult is getting up and taking action."
   );
   const [adviceId, setAdviceId] = useState("117");
-  const [addMode, setAddMode] = useState(false);
-
-  const toggleModes = () => {
-    setAddMode(!addMode);
-    const headerElement = document.querySelector("header");
-    if (headerElement) {
-      if (addMode) {
-        headerElement.classList.remove("dark-header");
-      } else {
-        headerElement.classList.add("dark-header");
-      }
-    }
-  };
 
   function handleChangeButton() {
     fetch("https://api.adviceslip.com/advice")
@@ -30,10 +17,7 @@ export default function Header(props) {
   }
 
   return (
-    <header
-      className={props.isChecked ? "header-class" : ""}
-      onClick={toggleModes}
-    >
+    <header className={props.isChecked ? "header-class" : ""}>
       <p className="header-title">
         Advice # <span id="advice-id">{adviceId}</span>
       </p>
