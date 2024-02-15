@@ -16,6 +16,7 @@ header {
   border-radius: 10px;
   padding: 2em;
   text-align: center;
+  margin-top: 1em;
 }
 
 .header-title {
@@ -28,12 +29,17 @@ header {
   margin-bottom: 0.7em;
 }
 
-.advice-text {
+.advice-text,
+.dark-advice-text {
   font-size: 1.56em;
   text-align: center;
   color: white;
   letter-spacing: 2px;
   margin-bottom: 2em;
+}
+
+.dark-advice-text {
+  color: #00192e;
 }
 
 .pattern-divider {
@@ -70,6 +76,89 @@ header {
   padding: 1em;
   box-shadow: 0px 0px 15px #fd8154;
   left: 45.4%;
+}
+
+.dark-class {
+  transition: 0.3s ease-in-out;
+  background-color: rgb(230, 230, 230);
+}
+
+.header-class {
+  transition: 0.1s ease-in-out;
+  background-color: rgb(255, 255, 255);
+}
+
+.modes {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.dark-title {
+  color: #00192e;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 51px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #808080;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #00192e;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #00192e;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 480px) {
