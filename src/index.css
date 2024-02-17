@@ -17,6 +17,7 @@ header {
   padding: 2em;
   text-align: center;
   margin-top: 1em;
+  box-shadow: 0px 0px 15px #fd8154;
 }
 
 .header-title {
@@ -76,6 +77,7 @@ header {
   padding: 1em;
   box-shadow: 0px 0px 15px #fd8154;
   left: 45.4%;
+  transform: rotate(-10deg);
 }
 
 .dark-class {
